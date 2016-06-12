@@ -1,3 +1,122 @@
-body {
-	background:blue
+h1,h2 {
+	text-align: center;
+	color: blue;
+	text-shadow: 2px 2px black;
+}
+
+h1 {
+	font-size: 4vw;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h2 {
+	font-size: 3vw;
+	color: red;
+}
+
+main {
+	background-image: url("pictures/quilt-yodel-background.jpg");
+	padding: 20px;
+	border-radius: 15px;
+}
+
+a:visited { 
+    color: #05F219;
+}
+
+.body {
+	max-width: 50%;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding:20px;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #41A3C4;
+}
+
+#first-part {
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+#section-part {
+	margin-bottom: 8px;
+	margin-top: 16px;
+}
+
+footer {
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#services {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 110%;
+}
+
+.address {
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* put the logos in the upper corners. */
+
+.logo {
+	position: absolute;
+	margin: 8px;
+	z-index: -1;
+}
+
+#quilt-logoA {
+	top: 0px;
+	left: 0px;
+}
+
+#quilt-logoB {
+	top: 0px;
+	right: 0px;
+}
+
+/* Make the logos rotate 90-degrees if the screen is too narrow. */
+
+@media screen and (max-width: 840px) {
+	.logo {
+		transform:          rotate(270deg);
+-ms-transform:      rotate(270deg);
+-moz-transform:     rotate(270deg);
+-webkit-transform:  rotate(270deg);
+-o-transform:       rotate(270deg);
+	position: absolute;
+	margin: 8px;
+	}
+	#quilt-logoA {
+		top: 100px;
+		left: -40px;
+	}
+
+	#quilt-logoB {
+		top: 100px;
+		right: -40px;
+	}
+}
+
+/* Center pictures on the linked pages. */
+
+.picture {
+	margin: 30px;
+}
+
+.examples {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 100%;
+	max-width: 100%;
+	padding: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
